@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Testing Parameterization" parallel="false" thread-count="3">
+    <parameter name="baseUrl" value="https://www.demoblaze.com"/>
+    <test  verbose="1" name="Test_Chrome">
+        <classes>
+            <class name="com.project.baseclass.FirstTestNGClass" />
+            <class name="com.project.tests.PhonesPurchaseTests" />
+
+        </classes>
+    </test>
+
+
+</suite>
